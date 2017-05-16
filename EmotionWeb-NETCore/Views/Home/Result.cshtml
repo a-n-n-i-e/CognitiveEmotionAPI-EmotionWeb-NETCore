@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Microsoft Cognitive Services - Emotion API Sample";
+}
+<div>
+    <h2>Microsoft Cognitive Services - Emotion API Sample</h2>
+    <p>こちらは <a href="https://www.microsoft.com/cognitive-services/">Microsoft Cognitive Services</a> の <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api">Emotion API</a> を用いた表情分析サンプルです。</p>
+    <p>分析したい画像のURLを入力してください。</p>
+    @using (Html.BeginForm(
+                "Index",
+                "Home",
+                null,
+                FormMethod.Post
+                ))
+    {
+        @Html.TextBox("url", ViewData["Url"], new { size = 85, disabled = "disabled" })
+        <input type="submit" value="リセット" />
+    }
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h3>@ViewData["Result"]</h3>
+        <table border="0" cellpadding="20">
+            <tr>
+                <td>怒り</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Anger"])</td>
+            </tr>
+            <tr>
+                <td>軽蔑</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Contempt"])</td>
+            </tr>
+            <tr>
+                <td>ムカつき</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Disgust"])</td>
+            </tr>
+            <tr>
+                <td>恐れ</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Fear"])</td>
+            </tr>
+            <tr>
+                <td>喜び</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Happiness"])</td>
+            </tr>
+            <tr>
+                <td>無表情</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Neutral"])</td>
+            </tr>
+            <tr>
+                <td>悲しみ</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Sadness"])</td>
+            </tr>
+            <tr>
+                <td>驚き</td>
+                <td>: </td>
+                <td>@Html.Encode(ViewData["Surprise"])</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-md-9">
+        <img src="@ViewData["Url"]" width="250" />
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Microsoft Cognitive Services - Emotion API Sample";
+}
+
+<div>
+    <h2>Microsoft Cognitive Services - Emotion API Sample</h2>
+    <p>こちらは <a href="https://www.microsoft.com/cognitive-services/">Microsoft Cognitive Services</a> の <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api">Emotion API</a> を用いた表情分析サンプルです。</p>
+    <p>分析したい画像のURLを入力してください。</p>
+    @using (Html.BeginForm(
+        "Result",
+        "Home",
+        null,
+        FormMethod.Post
+        ))
+    {
+        @Html.TextBox("url", "", new { size = 85 })
+        <input type="submit" value="分析する" />
+    }
+</div>
+
