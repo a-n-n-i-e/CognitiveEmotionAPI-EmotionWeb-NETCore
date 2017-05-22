@@ -2,8 +2,8 @@ c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\Emotio
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\bin\Debug\netcoreapp1.1\EmotionWeb-NETCore.runtimeconfig.json
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\bin\Debug\netcoreapp1.1\EmotionWeb-NETCore.runtimeconfig.dev.json
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\bin\Debug\netcoreapp1.1\EmotionWeb-NETCore.dll
-c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\bin\Debug\netcoreapp1.1\EmotionWeb-NETCore.pdb
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\obj\Debug\netcoreapp1.1\EmotionWeb-NETCore.csprojResolveAssemblyReference.cache
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\obj\Debug\netcoreapp1.1\EmotionWeb-NETCore.AssemblyInfo.cs
+c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\bin\Debug\netcoreapp1.1\EmotionWeb-NETCore.pdb
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\obj\Debug\netcoreapp1.1\EmotionWeb-NETCore.dll
 c:\users\ayomori\documents\visual studio 2017\Projects\EmotionWeb-NETCore\EmotionWeb-NETCore\obj\Debug\netcoreapp1.1\EmotionWeb-NETCore.pdb

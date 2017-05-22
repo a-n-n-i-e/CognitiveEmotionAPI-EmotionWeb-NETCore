@@ -1,26 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Microsoft Cognitive Services - Emotion API Sample";
 }
-<div>
-    <h2>Microsoft Cognitive Services - Emotion API Sample</h2>
-    <p>こちらは <a href="https://www.microsoft.com/cognitive-services/">Microsoft Cognitive Services</a> の <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api">Emotion API</a> を用いた表情分析サンプルです。</p>
-    <p>分析したい画像のURLを入力してください。</p>
-    @using (Html.BeginForm(
-                "Index",
-                "Home",
-                null,
-                FormMethod.Post
-                ))
-    {
-        @Html.TextBox("url", ViewData["Url"], new { size = 85, disabled = "disabled" })
-        <input type="submit" value="リセット" />
-    }
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Microsoft Cognitive Services - Emotion API Sample</h2>
+        <p>分析したい画像のURLを入力してください。</p>
+        @using (Html.BeginForm(
+                            "Index",
+                            "Home",
+                            null,
+                            FormMethod.Post
+                            ))
+        {
+            @Html.TextBox("url", "", new { size = 100, disabled = "disabled" })
+            <input type="submit" value="リセット" />
+        }
+    </div>
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-        <h3>@ViewData["Result"]</h3>
-        <table border="0" cellpadding="20">
+    <h3>@ViewData["Result"]</h3>
+    <div class="col-md-2">
+        <table border="0" cellpadding="0">
             <tr>
                 <td>怒り</td>
                 <td>: </td>
@@ -63,7 +66,7 @@
             </tr>
         </table>
     </div>
-    <div class="col-md-9">
-        <img src="@ViewData["Url"]" width="250" />
+    <div class="col-md-10">
+        <img src="@ViewData["Url"]" width="400" />
     </div>
 </div>
